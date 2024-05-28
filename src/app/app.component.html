@@ -1,0 +1,33 @@
+<div class="container">
+  <div class="card text-center col-4 m-auto border border-3">
+    <div class="card-header bg-info text-white font-weight-bold">
+      Thông tin sinh viên
+    </div>
+    <div class="card-body">
+      <ul class="list-group">
+        <img src="assets/hinh1.png" alt="" width="50%" class="m-auto" >
+        <li class="list-group-item">Họ Tên: {{student.ten}}</li>
+        <li class="list-group-item">Ngày sinh: {{student.ngaysinh}}</li>
+        <li class="list-group-item">Giới tính: {{student.phai == 0 ?"Nam":"Nữ"}}</li>
+        <li class="list-group-item">Điểm: {{student.diem}}</li>
+        
+      </ul>
+    </div>
+    <div class="card-footer text-muted">
+      Lab 1 môn Angular
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header bg-info text-white font-weight-bold">
+      Thông tin nhà khoa học
+    </div>
+    <div class="card-body">
+      <div id="ds"></div>
+      {{render()}}
+    </div>
+  </div>
+  <div id="listSP" class="d-flex flex-wrap">
+    {{renderSP()}}
+  </div>
+  
+</div>
